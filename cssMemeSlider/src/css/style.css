@@ -48,6 +48,19 @@ body {
     width: 100%;
 }
 
+.under-meme-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    box-shadow: -2rem 0rem 2rem #000000;
+}
+
 label {
     display: flex;
     justify-content: center;
@@ -63,4 +76,28 @@ label {
     border-radius: 50%;
     border: 0.2rem solid #ffffff;
     transition: 0.2s ease-in-out;
+}
+
+#radio-input1:checked ~ .slides {
+    transform:translateX(40%);
+}
+
+#radio-input2:checked ~ .slides {
+    transform:translateX(20%);
+}
+
+#radio-input3:checked ~ .slides {
+    transform:translateX(0%);
+}
+
+#radio-input4:checked ~ .slides {
+    transform:translateX(-20%);
+}
+
+#radio-input5:checked ~ .slides {
+    transform:translateX(-40%);
+}
+
+.label:hover {
+    cursor: pointer;
 }
