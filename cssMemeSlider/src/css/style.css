@@ -150,3 +150,23 @@ label {
 #radio-input5:checked ~ .under-meme-content .text-wrapper {
     transform: translateX(-400%);
 }
+
+.label:hover .pagination-circle {
+    cursor: pointer;
+    background-color: #967300;
+    transition: 0.2s ease;
+}
+
+.label:active .pagination-circle {
+    cursor: pointer;
+    background-color: #c3ac00;
+    transition: 0.2s ease;
+}
+
+#radio-input1:checked ~ .under-meme-content .pagination .label .pagination-circle1,
+#radio-input2:checked ~ .under-meme-content .pagination .label .pagination-circle2,
+#radio-input3:checked ~ .under-meme-content .pagination .label .pagination-circle3,
+#radio-input4:checked ~ .under-meme-content .pagination .label .pagination-circle4,
+#radio-input5:checked ~ .under-meme-content .pagination .label .pagination-circle5 {
+    background: #3c3c3c;
+}
