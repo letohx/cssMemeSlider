@@ -1,3 +1,11 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/kanit-v15-latin-regular.woff2') format('woff2');
+  }
+
 html {
     font-size: 0.7em;
     scroll-behavior: smooth;
