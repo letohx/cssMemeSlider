@@ -54,6 +54,27 @@ body {
     width: 100%;
 }
 
+.under-meme-text {
+    display: flex;
+    align-items: center;
+    width: 61.8%;
+    overflow: hidden;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.text {
+    color: #ffffff;
+    flex-shrink: 0;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
 .pagination {
     display: flex;
     align-items: center;
@@ -100,4 +121,24 @@ label {
 
 .label:hover {
     cursor: pointer;
+}
+
+#radio-input1:checked ~ .under-meme-content .text-wrapper {
+    transform: translateX(0);
+}
+
+#radio-input2:checked ~ .under-meme-content .text-wrapper {
+    transform: translateX(-100%);
+}
+
+#radio-input3:checked ~ .under-meme-content .text-wrapper {
+    transform: translateX(-200%);
+}
+
+#radio-input4:checked ~ .under-meme-content .text-wrapper {
+    transform: translateX(-300%);
+}
+
+#radio-input5:checked ~ .under-meme-content .text-wrapper {
+    transform: translateX(-400%);
 }
