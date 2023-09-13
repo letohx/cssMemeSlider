@@ -1,0 +1,66 @@
+html {
+    font-size: 0.7em;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Kanit, Verdana;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+}
+
+.pagination-input {
+    display: none;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    overflow: hidden;
+    margin: 0 3%;
+    height: 100vh;
+    max-width: 75vh;
+    background: rgb(0, 0, 0);
+}
+
+.slides {
+    width: 500%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.slide-wrapper {
+    flex: 1;
+    object-fit: contain;
+    height: auto;
+}
+
+.slider-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+}
+
+.pagination-circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 0.2rem solid #ffffff;
+    transition: 0.2s ease-in-out;
+}
