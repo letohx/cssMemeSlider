@@ -108,23 +108,27 @@ label {
 }
 
 #radio-input1:checked ~ .slides {
-    transform:translateX(40%);
+    transform:translateX(calc(100% / 12 + (100% / 6) * 2));
 }
 
 #radio-input2:checked ~ .slides {
-    transform:translateX(20%);
+    transform:translateX(calc(100% / 12 + 100% / 6));
 }
 
 #radio-input3:checked ~ .slides {
-    transform:translateX(0%);
+    transform:translateX(calc(100% / 12));
 }
 
 #radio-input4:checked ~ .slides {
-    transform:translateX(-20%);
+    transform:translateX(calc(-100% / 12));
 }
 
 #radio-input5:checked ~ .slides {
-    transform:translateX(-40%);
+    transform:translateX(calc(-100% / 12 - 100% / 6));
+}
+
+#radio-input6:checked ~ .slides {
+    transform:translateX(calc(-100% / 12 - (100% / 6) * 2));
 }
 
 .label:hover {
@@ -151,6 +155,10 @@ label {
     transform: translateX(-400%);
 }
 
+#radio-input6:checked ~ .under-meme-content .text-wrapper {
+    transform: translateX(-500%);
+}
+
 .label:hover .pagination-circle {
     cursor: pointer;
     background-color: #967300;
@@ -167,7 +175,8 @@ label {
 #radio-input2:checked ~ .under-meme-content .pagination .label .pagination-circle2,
 #radio-input3:checked ~ .under-meme-content .pagination .label .pagination-circle3,
 #radio-input4:checked ~ .under-meme-content .pagination .label .pagination-circle4,
-#radio-input5:checked ~ .under-meme-content .pagination .label .pagination-circle5 {
+#radio-input5:checked ~ .under-meme-content .pagination .label .pagination-circle5,
+#radio-input6:checked ~ .under-meme-content .pagination .label .pagination-circle6  {
     background: #3c3c3c;
 }
 
