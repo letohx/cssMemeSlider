@@ -42,7 +42,7 @@ body {
     flex-direction: row;
     align-items: center;
     margin-bottom: 2rem;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .slide-wrapper {
@@ -73,7 +73,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex: 1;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .text {
@@ -97,6 +97,7 @@ label {
     align-items: center;
     width: 3rem;
     height: 3rem;
+    transition: 0.5s ease-in-out;    
 }
 
 .pagination-circle {
@@ -105,6 +106,7 @@ label {
     background: #ffffff;
     border-radius: 50%;
     border: 0.2rem solid #ffffff;
+    transition: 0.5s ease-in-out;
 }
 
 #radio-input1:checked ~ .slides {
@@ -129,10 +131,6 @@ label {
 
 #radio-input6:checked ~ .slides {
     transform:translateX(calc(-100% / 12 - (100% / 6) * 2));
-}
-
-.label:hover {
-    cursor: pointer;
 }
 
 #radio-input1:checked ~ .under-meme-content .text-wrapper {
@@ -162,13 +160,18 @@ label {
 .label:hover .pagination-circle {
     cursor: pointer;
     background-color: #967300;
-    transition: 0.2s ease;
+    border: 0.2rem solid #2c60f0;
+    transition: 0.5s ease;
+}
+
+.label:hover {
+    cursor: pointer;
 }
 
 .label:active .pagination-circle {
     cursor: pointer;
     background-color: #c3ac00;
-    transition: 0.2s ease;
+    transition: 0.5s ease;
 }
 
 #radio-input1:checked ~ .under-meme-content .pagination .label .pagination-circle1,
