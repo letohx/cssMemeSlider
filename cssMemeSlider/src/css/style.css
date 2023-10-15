@@ -1,0 +1,201 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/kanit-v15-latin-regular.woff2') format('woff2');
+  }
+
+html {
+    font-size: 1.5vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Kanit, Verdana;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background: rgb(0, 0, 0);
+}
+
+.pagination-input {
+    display: none;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    overflow: hidden;
+    margin: 0 3%;
+    height: 100vh;
+    max-width: 75vh;
+    background: rgb(0, 0, 0);
+}
+
+.slides {
+    width: 600%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+    transition: 0.5s ease-in-out;
+}
+
+.slide-wrapper {
+    flex: 1;
+    object-fit: contain;
+    height: auto;
+}
+
+.slider-img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.under-meme-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.under-meme-text {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.text {
+    color: #ffffff;
+    flex-shrink: 0;
+    width: 100%;
+    font-size: 1.9rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    box-shadow: -2rem 0rem 2rem #000000;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    transition: 0.5s ease-in-out;    
+}
+
+.pagination-circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 0.2rem solid #ffffff;
+    transition: 0.5s ease-in-out;
+}
+
+#radio-input1:checked ~ .slides {
+    transform:translateX(calc(100% / 12 + (100% / 6) * 2));
+}
+
+#radio-input2:checked ~ .slides {
+    transform:translateX(calc(100% / 12 + 100% / 6));
+}
+
+#radio-input3:checked ~ .slides {
+    transform:translateX(calc(100% / 12));
+}
+
+#radio-input4:checked ~ .slides {
+    transform:translateX(calc(-100% / 12));
+}
+
+#radio-input5:checked ~ .slides {
+    transform:translateX(calc(-100% / 12 - 100% / 6));
+}
+
+#radio-input6:checked ~ .slides {
+    transform:translateX(calc(-100% / 12 - (100% / 6) * 2));
+}
+
+#radio-input1:checked ~ .under-meme-content .text-wrapper {
+    transform: translateX(0);
+}
+
+#radio-input2:checked ~ .under-meme-content .text-wrapper {
+    transform: translateX(-100%);
+}
+
+#radio-input3:checked ~ .under-meme-content .text-wrapper {
+    transform: translateX(-200%);
+}
+
+#radio-input4:checked ~ .under-meme-content .text-wrapper {
+    transform: translateX(-300%);
+}
+
+#radio-input5:checked ~ .under-meme-content .text-wrapper {
+    transform: translateX(-400%);
+}
+
+#radio-input6:checked ~ .under-meme-content .text-wrapper {
+    transform: translateX(-500%);
+}
+
+.label:hover .pagination-circle {
+    cursor: pointer;
+    background-color: #967300;
+    border: 0.2rem solid #2c60f0;
+    transition: 0.5s ease;
+}
+
+.label:hover {
+    cursor: pointer;
+}
+
+.label:active .pagination-circle {
+    cursor: pointer;
+    background-color: #c3ac00;
+    transition: 0.5s ease;
+}
+
+#radio-input1:checked ~ .under-meme-content .pagination .label .pagination-circle1,
+#radio-input2:checked ~ .under-meme-content .pagination .label .pagination-circle2,
+#radio-input3:checked ~ .under-meme-content .pagination .label .pagination-circle3,
+#radio-input4:checked ~ .under-meme-content .pagination .label .pagination-circle4,
+#radio-input5:checked ~ .under-meme-content .pagination .label .pagination-circle5,
+#radio-input6:checked ~ .under-meme-content .pagination .label .pagination-circle6  {
+    background: #3c3c3c;
+}
+
+/* Media */
+@media screen and (max-width: 670px) {
+    .under-meme-content {
+        flex-direction: column-reverse;        
+    }
+    .pagination {
+        justify-content: center;
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-aspect-ratio: 1.2/2) {
+    html {
+        font-size: 2.5vw;
+    }
+  }

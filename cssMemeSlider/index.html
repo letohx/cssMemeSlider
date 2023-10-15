@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/css/normalize.css" rel="stylesheet">
+    <link href="src/css/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="src/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="src/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="src/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>CSS meme slider</title>
+</head>
+<body>
+    <div class="slider">
+        <input type="radio" name="radio-btn" id="radio-input1" class="pagination-input" checked>
+        <input type="radio" name="radio-btn" id="radio-input2" class="pagination-input">
+        <input type="radio" name="radio-btn" id="radio-input3" class="pagination-input">
+        <input type="radio" name="radio-btn" id="radio-input4" class="pagination-input">
+        <input type="radio" name="radio-btn" id="radio-input5" class="pagination-input">
+        <input type="radio" name="radio-btn" id="radio-input6" class="pagination-input">
+      
+        <div class="slides">
+            <div class="slide-wrapper">
+                <img class="slider-img" src="src/img/meme1.jpg" alt="1 meme">
+            </div>
+            <div class="slide-wrapper">
+                <img class="slider-img" src="src/img/meme2.jpg" alt="2 meme">
+            </div>
+            <div class="slide-wrapper">
+                <img class="slider-img" src="src/img/meme3.jpg" alt="3 meme">
+            </div>
+            <div class="slide-wrapper">
+                <img class="slider-img" src="src/img/meme4.jpg" alt="4 meme">
+            </div>
+            <div class="slide-wrapper">
+                <img class="slider-img" src="src/img/meme5.jpg" alt="5 meme">
+            </div>
+            <div class="slide-wrapper">
+                <img class="slider-img" src="src/img/meme6.jpg" alt="6 meme">
+            </div>
+        </div>  
+        
+        <div class="under-meme-content">
+            <div class="under-meme-text">
+                <div class="text-wrapper">
+                    <div class="text text1">Test</div>
+                    <div class="text text2">Education</div>
+                    <div class="text text3">Logic</div>
+                    <div class="text text4">Cross-check</div>
+                    <div class="text text5">It's not time</div>
+                    <div class="text text6">It's time</div>
+                </div>
+            </div>
+            <div class="pagination">
+                <label class="label" for="radio-input1">
+                    <div class="pagination-circle pagination-circle1"></div>
+                </label>
+                <label class="label" for="radio-input2">
+                    <div class="pagination-circle pagination-circle2"></div>
+                </label>
+                <label class="label" for="radio-input3">
+                    <div class="pagination-circle pagination-circle3"></div>
+                </label>
+                <label class="label" for="radio-input4">
+                    <div class="pagination-circle pagination-circle4"></div>
+                </label>
+                <label class="label" for="radio-input5">
+                    <div class="pagination-circle pagination-circle5"></div>
+                </label>
+                <label class="label" for="radio-input6">
+                    <div class="pagination-circle pagination-circle6"></div>
+                </label>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
